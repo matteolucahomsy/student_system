@@ -25,7 +25,7 @@ class StudentManager:
         conn=sqlite3.connect("students.db")
         cursor=conn.cursor()
 
-        cursor.execute("DELETE FROM students WHERE id = ?")
+        cursor.execute("DELETE FROM students WHERE id = ?",(student_id,))
         
         conn.commit()
         conn.close()
@@ -48,7 +48,7 @@ class StudentManager:
         conn=sqlite3.connect("students.db")
         cursor=conn.cursor()
 
-        cursor.execute("SELECT * FROM students WHERE id = ?",(student_id))
+        cursor.execute("SELECT * FROM students WHERE id = ?",(student_id,))
         student=cursor.fetchone()
         conn.close()
 
