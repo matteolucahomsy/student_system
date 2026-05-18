@@ -44,13 +44,16 @@ A full-stack Python project using Flask, SQLite and Matplotlib.
 ### Terminal version:
 ```bash
 python main.py
+```
 
-🌐 Web version:
+---
+### Web version:
 ```bash
 python app.py
 
 THEN open:
 http://127.0.0.1:5000
+```
 
 
 
