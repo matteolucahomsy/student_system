@@ -121,3 +121,10 @@ class StudentManager:
         for s in students:
             print(s)
         conn.close()
+    def get_all_students(self):
+        conn=sqlite3.connect("students.db")
+        cursor=conn.cursor()
+        cursor.execute("SELECT * FROM students")
+        data= cursor.fetchall()
+        conn.close()
+        return data
