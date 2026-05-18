@@ -1,28 +1,72 @@
-# Student Management System
+# 🎓 Student Management System
 
-A simple Python project to manage students using Object-Oriented Programming and SQLite.
-
----
-
-## Features
-
-- Add a student
-- Display all students
-- Store data in SQLite database
+A full-stack Python project using Flask, SQLite and Matplotlib.
 
 ---
 
-## Technologies used
+## 🚀 Features
+
+### Terminal version (Level 3)
+- Add student
+- Delete student
+- Update grade
+- Search student
+- Display students
+- Ranking system
+- Class average
+- Export CSV
+- Data visualization (Matplotlib)
+
+---
+
+### Web version (Level 4)
+- Flask web server
+- Add student via web form
+- Display students in browser
+- SQLite database integration
+- Dynamic routing
+
+---
+
+## 🛠️ Tech Stack
 
 - Python
+- Flask
 - SQLite
-- Object-Oriented Programming (OOP)
+- Matplotlib
+- CSV module
+- HTML/CSS
 
 ---
 
-## How to run the project
+## ▶️ How to run
 
-1. Create the database:
-
+### Terminal version:
 ```bash
-python database.py
+python main.py
+
+🌐 Web version:
+```bash
+python app.py
+
+THEN open:
+http://127.0.0.1:5000
+
+
+
+📁 Project Structure
+
+student_system/
+│
+├── app.py              # Flask web application
+├── main.py             # Terminal version (CLI)
+├── manager.py          # Database logic (CRUD operations)
+├── student.py          # Student class model
+├── students.db        # SQLite database
+│
+├── templates/         # HTML pages (Flask)
+│   ├── index.html     # Student list page
+│   └── add.html       # Add student form
+│
+└── static/            # Static files (CSS/JS optional)
+    └── style.css
