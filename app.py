@@ -25,6 +25,14 @@ def add_student():
 def delete_student(student_id):
     manager.delete_student(student_id)
     return redirect("/")
+@app.route("/update/<int:student_id>",methods=["GET", "POST"])
+def update_student(student_id):
+    if request.method=="POST":
+        new_grade=float(request.form.get("grade"))
+        manager.update_grade(student_id, new_grade)
+        return redirect("/")
+    return render_template("update.html", student_id=student_id)
+
 
 
 if __name__ == "__main__":

@@ -22,7 +22,10 @@
         <td>{{ s[1]  }}</td>
         <td>{{ s[2]  }}</td>
         <td>{{ s[3]  }}</td>
-        <td><a href="/delete/{{  s[0]  }}">Delete</a></td>
+        <td>
+            <a href="/delete/{{  s[0]  }}">Delete</a>
+            <a href="/update/{{  s[0]  }}">Update</a>
+        </td>
     </tr>
     {% endfor %}
 </table>
