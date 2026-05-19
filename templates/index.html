@@ -14,6 +14,7 @@
         <th>Name</th>
         <th>Age</th>
         <th>Grade</th>
+        <th>Actions</th>
     </tr>
     {% for s in students %}
     <tr>
@@ -21,6 +22,7 @@
         <td>{{ s[1]  }}</td>
         <td>{{ s[2]  }}</td>
         <td>{{ s[3]  }}</td>
+        <td><a href="/delete/{{  s[0]  }}">Delete</a></td>
     </tr>
     {% endfor %}
 </table>

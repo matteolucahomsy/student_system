@@ -21,6 +21,10 @@ def add_student():
         manager.add_student(student)
         return redirect("/")
     return render_template("add.html")
+@app.route("/delete/<int:student_id>")
+def delete_student(student_id):
+    manager.delete_student(student_id)
+    return redirect("/")
 
 
 if __name__ == "__main__":
